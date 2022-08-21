@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BVS BEATS</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+            </head>
+    <body>
+        <header>
+            <a href="#" class="logo">logo</a>
+            <ul>
+                <li><a href="#" class="active">Home</a>
+                <li><a href="#" >About</a>
+                <li><a href="#" >Work</a>
+                <li><a href="#" >Contact</a>
+            </ul>
+        </header>
+        <section>
+            <img src="bg/3-.png" id="bg">
+            <h2 id="text" >BVS BEATSS</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="bg/1-.png" id="base">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Making Beats (bvs beats)</h2>
+            <p>To me, a "beat maker" is someone who creates "beats". Nowadays, it's usually done on some type of computer. A beat machine (like an MPC or sampling keyboard) is the same thing. They are just pieces of hardware with their own internal CPU systems. So for the sake of argument, let's just say that 99% of modern music is done on a system that contains an internal CPU (yes, the Game Of Thrones intro theme song was entirely done on a computer. Crazy, huh?)
+                So what exactly does it mean to "make beats"? Believe it or not, most non-music-making people still don't quite understand what it is, which is totally ok. Here's a brief explanation of what "making beats" means: Think of it like a "one man band". The "beat maker" is literally composing a full piece of music. <br><br>They are "playing" the drums (or "programming"), keyboards, instruments, various sounds, percussion, you name it. Sometimes, they take other pieces of music that already exist and "manipulate" them into brand new beats (in other words, "sampling"). All of this is done on a computer (most of the time, with just a keyboard hooked up to it).<br><br>
+                Making beats is awesome. <br><br>It's a skill. It's addicting. There's so many ways to express yourself. So many palettes, colors, sounds to choose from. It's like being a modern day classical composer, minus the paper, sheet music and feather tipped ink pen. It's 2016. We use computers. And software programs. Lot's of them. Almost too many to choose from. It's a skill that requires creativity AND technical know-how.
+                Ok. Cool. So, what is a "music producer" then?<br><br>
+                Well, in my opinion, a "music producer" is someone who produces music (surprise!). The definition of "produce" is to "make or manufacture from components or raw materials". In this case, our components are music chords, drums, instrument riffs and anything we can manipulate to produce "sound", which ultimately we like to call a "song", or "music".
+                So the argument becomes "Well, if I make beats, aren't I 'producing music'? And doesn't that qualify me to be considered a 'music producer'?". 
+                In 2016, the answer is yes.<br><br>
+                Why is the answer yes? Because music is different now. The music consuming public loves anything that's good. A lot of good music nowadays doesn't necessarily have to contain vocals. There are pieces of music out there that were created with a laptop and headphones by people who are simply "making beats". It's 2016. Sh!t is different now.
+                I think the true argument here is the argument of "What else can you do beyond just making a beat?". Can you write lyrics? Can you compose vocal melodies? Can you play any instruments? Can you manifest song concepts and give purpose to a song? Do you have the skills to commit to the totality of creating a full song, with other people involved (vocalists, musicians, other composers, etc). Are you a leader? Do you know how to inspire other creatives while collaborating?
+                All of these questions have to do with one thing, and one thing only. The production of a song. Taking raw material and producing an audible collection of sound that provides satisfaction to the human being listening to it, usually lasting a few minutes, with hopes that they will love it, play it over and over, become inspired by it and hopefully remember that very moment in their life when they first heard it.
+                That's all this stuff really is at the end of the day.<br><br>
+                Making beats is awesome. Producing music is awesome. It's all labels that either offend you, or stroke your ego. Having the skill set to do more or less is entirely up to you. Your process of how you "produce music" is also entirely up to you. Who gives a sh!t anyway. 
+                You produce stuff. From scratch. For the world to consume. That idea alone is pretty damn cool if you ask me. <br><br></p>
+        </div>
+        <script>
+            let bg = document.getElementById('bg')
+            let text = document.getElementById('text')
+            let btn = document.getElementById('btn')
+            let base = document.getElementById('base')
+            let header = document.querySelector('header')
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                bg.style.left = top * 0.5 + 'px';
+                base.style.top = value * 0.5 + 'px';
+                text.style.marginRight = value * 3.5 + 'px';
+                btn.style.top = value * 0.3 + 'px';
+                header.style.top = value * 0.5 + 'px';
+
+            })
+
+        </script>
+    </body>
+</html>
